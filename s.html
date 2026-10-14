@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>College Event Registration</h2>
+
+        <form id="eventForm">
+
+            <label>Student Name:</label>
+            <input type="text" id="name">
+            <span id="nameError" class="error"></span>
+
+            <label>Email:</label>
+            <input type="text" id="email">
+            <span id="emailError" class="error"></span>
+
+            <label>USN:</label>
+            <input type="text" id="usn">
+            <span id="usnError" class="error"></span>
+
+            <label>Department:</label>
+            <select id="department">
+                <option value="">Select Department</option>
+                <option value="CSE">CSE</option>
+                <option value="ISE">ISE</option>
+                <option value="ECE">ECE</option>
+                <option value="AIML">AIML</option>
+            </select>
+
+            <label>Event:</label>
+            <select id="event">
+                <option value="">Select Event</option>
+                <option value="Coding Competition">Coding Competition</option>
+                <option value="Hackathon">Hackathon</option>
+                <option value="Cultural Fest">Cultural Fest</option>
+                <option value="Technical Quiz">Technical Quiz</option>
+            </select>
+
+            <label>Participation Type:</label>
+            <div class="radio-group">
+                <input type="radio" name="type" value="Individual">
+                Individual
+                <input type="radio" name="type" value="Team">
+                Team
+            </div>
+
+            <button type="submit">Register</button>
+
+            <p id="result"></p>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
